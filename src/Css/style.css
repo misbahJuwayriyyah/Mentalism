@@ -813,10 +813,11 @@ html {
 }
 @media (max-width: 1323px) and (min-width: 429px) {
   .navbar{
-    margin-right: 3%;
+    margin-top: 1.7%;
+    margin-left: 56.5%;
   }
   .main {
-    background-size: 100vw 100vh;
+    background-size: 100% 100%;
   }
   #joke,
   #quote {
@@ -828,17 +829,18 @@ html {
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 660px) {
   .navbar{
+    margin-left: 50%;
     margin-top: 2%;
     background-color: #EEEDEB;
     color:#F4ADCB;
   }
   .main {
     background: url(../../public/Images/back.jpeg) no-repeat;
-    background-size: 100% 100vh;
+    background-size: 200% 120vh;
   }
   body {
     background: url(../../public/Images/back.jpeg) no-repeat;
-    background-size: 100% 100vh;
+    background-size: 200% 210vh;
   }
   .wid-main {
     width: 80%;
