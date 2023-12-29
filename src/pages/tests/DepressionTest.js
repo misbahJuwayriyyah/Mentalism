@@ -13,17 +13,17 @@ const DepressionTest = () => {
         const cancelBtn = document.querySelector('.cancel-btn');
 
         menuBtn.onclick = () => {
-            menu.classNameList.add('active');
-            menuBtn.classNameList.add('hide');
-            cancelBtn.classNameList.add('show');
-            body.classNameList.add('disabledScroll');
+            menu.classList.add('active');
+            menuBtn.classList.add('hide');
+            cancelBtn.classList.add('show');
+            body.classList.add('disabledScroll');
         };
 
         cancelBtn.onclick = () => {
-            menu.classNameList.remove('active');
-            menuBtn.classNameList.remove('hide');
-            cancelBtn.classNameList.remove('show');
-            body.classNameList.remove('disabledScroll');
+            menu.classList.remove('active');
+            menuBtn.classList.remove('hide');
+            cancelBtn.classList.remove('show');
+            body.classList.remove('disabledScroll');
         };
         const questions = [
             {

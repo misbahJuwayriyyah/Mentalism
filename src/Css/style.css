@@ -826,6 +826,9 @@ html {
 /* media queries */
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 660px) {
+  .nav1{
+    margin-right: 65px !important;
+  }
   .navbar{
     margin-top: 2.5%;
     background-color: #EEEDEB;
@@ -834,11 +837,11 @@ html {
     z-index: 0;
   }
   .main {
-    background: url(../../public/Images/back.jpeg) no-repeat;
+    background: url(../../public/Images/back.jpeg) repeat !important;
     background-size: 200% 120vh;
   }
   body {
-    background: url(../../public/Images/back.jpeg) no-repeat;
+    background: url(../../public/Images/back.jpeg) repeat !important;
     background-size: 200% 210vh;
   }
   .wid-main {

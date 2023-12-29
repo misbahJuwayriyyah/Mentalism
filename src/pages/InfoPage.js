@@ -149,7 +149,7 @@ const InfoPage = () => {
                                 name="video-list"
                                 id="video-1"
                                 checked="checked"
-                            /><label for="video-1"
+                            /><label htmlFor="video-1"
                             >8 principles to achieve optimum mental health</label
                             >
                             <input
@@ -157,13 +157,13 @@ const InfoPage = () => {
                                 value="2"
                                 name="video-list"
                                 id="video-2"
-                            /><label for="video-2">Focus on yourself not others</label>
+                            /><label htmlFor="video-2">Focus on yourself not others</label>
                             <input
                                 type="radio"
                                 value="3"
                                 name="video-list"
                                 id="video-3"
-                            /><label for="video-3"
+                            /><label htmlFor="video-3"
                             >The most important lesson from 83,000 brain scans
                             </label>
                             <input
@@ -171,7 +171,7 @@ const InfoPage = () => {
                                 value="4"
                                 name="video-list"
                                 id="video-4"
-                            /><label for="video-4"
+                            /><label htmlFor="video-4"
                             >How to stop feeling anxious about anxiety</label
                             >
                             <input
@@ -179,7 +179,7 @@ const InfoPage = () => {
                                 value="5"
                                 name="video-list"
                                 id="video-5"
-                            /><label for="video-5"
+                            /><label htmlFor="video-5"
                             >How to Become Your Best When Life Gives You Its Worst</label
                             >
                             <input
@@ -187,64 +187,64 @@ const InfoPage = () => {
                                 value="6"
                                 name="video-list"
                                 id="video-6"
-                            /><label for="video-6">How To Eliminate Self Doubt Forever </label>
-                            <div class="video video-1">
+                            /><label htmlFor="video-6">How To Eliminate Self Doubt Forever </label>
+                            <div className="video video-1">
                                 <iframe
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/oWjSdwzOA6k"
-                                    frameborder="0"
-                                    allowfullscreen
+                                    frameBorder="0"
+                                    allowFullScreen
                                 ></iframe>
                             </div>
 
-                            <div class="video video-2">
+                            <div className="video video-2">
                                 <iframe
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/eBSeCp__xhI"
-                                    frameborder="0"
-                                    allowfullscreen
+                                    frameBorder="0"
+                                    allowFullScreen
                                 ></iframe>
                             </div>
 
-                            <div class="video video-3">
+                            <div className="video video-3">
                                 <iframe
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/esPRsT-lmw8"
                                     frameborder="0"
-                                    allowfullscreen
+                                    allowFullScreen
                                 ></iframe>
                             </div>
 
-                            <div class="video video-4">
+                            <div className="video video-4">
                                 <iframe
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/ZidGozDhOjg"
                                     frameborder="0"
-                                    allowfullscreen
+                                    allowFullScreen
                                 ></iframe>
                             </div>
 
-                            <div class="video video-5">
+                            <div className="video video-5">
                                 <iframe
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/I4svF7J6MWg"
                                     frameborder="0"
-                                    allowfullscreen
+                                    allowFullScreen
                                 ></iframe>
                             </div>
 
-                            <div class="video video-6">
+                            <div className="video video-6">
                                 <iframe
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/v1ojZKWfShQ"
                                     frameborder="0"
-                                    allowfullscreen
+                                    allowFullScreen
                                 ></iframe>
                             </div>
                         </div>

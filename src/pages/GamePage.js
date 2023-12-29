@@ -121,7 +121,7 @@ const GamePage = () => {
                                         songs and uplift your mood. There also a audio visualizer to visualize the audio spectrum you are
                                         playing.
                                     </p>
-                                    <a href="/audioPlayer" class="list-card--btn">Play</a>
+                                    <a href="/audioPlayer" className="list-card--btn">Play</a>
                                 </div>
                             </div>
                         </div>
