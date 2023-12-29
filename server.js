@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: 'https://mentalism.vercel.app/' // or specific origin(s)
+    origin: 'https://mentalism.vercel.app/gethelp' // or specific origin(s)
   }));
   
 
