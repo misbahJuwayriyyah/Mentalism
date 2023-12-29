@@ -834,11 +834,11 @@ html {
   }
   .main {
     background: url(../../public/Images/back.jpeg) no-repeat;
-    background-size: 200% 120vh;
+    background-size: 100% 100vh;
   }
   body {
     background: url(../../public/Images/back.jpeg) no-repeat;
-    background-size: 200% 210vh;
+    background-size: 100% 100vh;
   }
   .wid-main {
     width: 80%;
