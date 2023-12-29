@@ -813,7 +813,7 @@ html {
 }
 @media (max-width: 1323px) and (min-width: 429px) {
   .navbar{
-    margin-top: 1.7%;
+    margin-right: 2%;
   }
   .main {
     background-size: 100% 100%;
