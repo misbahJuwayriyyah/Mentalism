@@ -213,7 +213,7 @@ const InfoPage = () => {
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/esPRsT-lmw8"
-                                    frameborder="0"
+                                    frameBorder="0"
                                     allowFullScreen
                                 ></iframe>
                             </div>
@@ -223,7 +223,7 @@ const InfoPage = () => {
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/ZidGozDhOjg"
-                                    frameborder="0"
+                                    frameBorder="0"
                                     allowFullScreen
                                 ></iframe>
                             </div>
@@ -233,7 +233,7 @@ const InfoPage = () => {
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/I4svF7J6MWg"
-                                    frameborder="0"
+                                    frameBorder="0"
                                     allowFullScreen
                                 ></iframe>
                             </div>
@@ -243,7 +243,7 @@ const InfoPage = () => {
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/v1ojZKWfShQ"
-                                    frameborder="0"
+                                    frameBorder="0"
                                     allowFullScreen
                                 ></iframe>
                             </div>

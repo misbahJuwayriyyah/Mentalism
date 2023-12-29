@@ -132,5 +132,27 @@ footer a {
 @media (max-width: 660px) {
     .container{
         height:auto !important;
+        max-width:450px !important;
+    }
+    .new{
+        margin-left: 0!important;
+    }
+    .drop{
+        width:20rem !important;
+    }
+    .nav1{
+        margin-right: 19% !important;
+    }
+    .drop_photos{
+        margin-left: 35px !important;
+        width:80% !important;
+    }
+    .drop_videos{
+        margin: 0 !important;
+        width:70% !important;
+        box-shadow: none;
+    }
+    video{
+        width:80% !important;
     }
 }
