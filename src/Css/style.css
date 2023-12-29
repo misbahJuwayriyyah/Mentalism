@@ -830,6 +830,8 @@ html {
     margin-top: 2.5%;
     background-color: #EEEDEB;
     color:#F4ADCB;
+    width:15px !important;
+    z-index: 0;
   }
   .main {
     background: url(../../public/Images/back.jpeg) no-repeat;
@@ -847,7 +849,7 @@ html {
     margin-left: 2.5rem;
   }
   .container p {
-    padding-top: 0px;
+    padding-top: 0%;
     margin: 1em;
     font-size: 0.8rem;
   }
