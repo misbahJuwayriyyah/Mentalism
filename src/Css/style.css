@@ -1131,14 +1131,14 @@ color:black;
 .next-question-btn,
 .check-result-btn {
   cursor: pointer;
-  color: white;
   text-align: center;
   padding: 0.6rem 1rem;
   margin: 16px auto;
   text-decoration: none;
   font-size: 1.4rem;
-  background: #49654c;
-  /* background-color: #fbbe28; */
+  background-color: #F4ADCB;
+  color: black;
+  text-shadow: 0.6px 0.6px 2px #bc336c;
   border-radius: 1rem;
   border: none;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
@@ -1147,9 +1147,8 @@ color:black;
 
 .next-question-btn:hover , 
 .check-result-btn:hover {
-  background: #668069;
+  background: #F49B77;
   cursor: pointer;
-  color: black;
 }
 
 .progress-bar {
@@ -1163,10 +1162,11 @@ color:black;
 .progress-bar-fill {
   width: 100%;
   height: 100%;
-  background: #49654c;
+  background: #F4ADCB;
   border-radius: 40px;
   transition: width 0.5s ease 0s;
   overflow: hidden;
+  border:1px solid black;
 }
 
 .anxietytest-header {
@@ -1182,8 +1182,9 @@ color:black;
   flex-grow: 1;
 }
 .options {
-  background-color: #49654c;
-  color: #fff;
+  background-color: #F4ADCB;
+  color: black;
+  text-shadow: 0.6px 0.6px 2px #bc336c;
   font-size: 1.4rem;
   border-radius: 0.6rem;
   cursor: pointer;
@@ -1193,8 +1194,7 @@ color:black;
   padding: 0.4rem 0;
 }
 .options:hover{
-  background-color: white;
-  color: black;
+  background-color: #F49B77;
 }
 
 .anxiety {
@@ -1225,8 +1225,7 @@ color:black;
 }
 
 .options.active {
-  color: black;
-  background-color: white;
+  background-color: #F49B77;
 }
 
 @media (max-width: 768px) {

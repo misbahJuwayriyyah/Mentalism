@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
 import '../Css/style.css';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 const HelpPage = () => {
+    const [data, setData] = useState([]);
     useEffect(() => {
         const preloader = document.getElementById('loader');
         preloader.style.display = 'none';
@@ -24,6 +25,25 @@ const HelpPage = () => {
             cancelBtn.classList.remove('show');
             body.classList.remove('disabledScroll');
         };
+        const fetchProjects = async () => {
+            try {
+                const response = await fetch('http://localhost:5000/api/projects', {
+                    method: 'GET',
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const projectsData = await response.json();
+                setData(projectsData);
+                console.log(projectsData); // Log the fetched data
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchProjects(); // Call the function to initiate the data fetching
     }, []);
 
     return (
@@ -37,7 +57,7 @@ const HelpPage = () => {
                             <div className="icon cancel-btn">
                                 <i className="fas fa-times"></i>
                             </div>
-                            <li className="items alt">
+                            <li className="items">
                                 <Link to="/">Home</Link>
                             </li>
                             <li className="items">
@@ -53,7 +73,7 @@ const HelpPage = () => {
                                     <Link to="/depressionTest" className="items">Depression Test</Link>
                                 </div>
                             </div>
-                            <li className="items">
+                            <li className="items alt">
                                 <Link to="/gethelp">Get Help</Link>
                             </li>
                         </ul>
@@ -64,57 +84,31 @@ const HelpPage = () => {
                 </nav>
             </header>
             <section>
-                <div className="wid container">
+                <div className="wid container" style={{ marginTop: "25px" ,height:"800px"}}>
                     <div className="get-help">
                         <h1>How To Get Mental Health Help?</h1>
                         <p className="desc">
-                            The Union Social Justice and Empowerment Ministry launched a 24/7 toll-free helpline to provide support to people facing anxiety, stress, depression, suicidal thoughts, and other mental health concerns.
-                            The mental health rehabilitation helpline, KIRAN, can be called from a landline and mobile phones across the country at the number <b>1800-599-0019.</b>
+                        The Pakistan Mental Health Coalition (PMHC) is a network of organizations and individuals passionate about helping Pakistanis affected by stress and mental health problems. The vision of the PMHC is to collaboratively promote a holistic and multisectoral approach for mental health in Pakistan.
 
                         </p>
-                        <h3>
-                            <a href="https://nhm.gov.in/index1.php?lang=1&level=2&sublinkid=1043&lid=359"
-                            >NATIONAL MENTAL HEALTH PROGRAMME (NMHP)</a
-                            >
-                        </h3>
-                        <div className="para">
-                            <p>
-                                National Mental Health Programme was launched by the Government of India in 1982, with the following
-                                objectives
-                            </p>
-                            <ul>
-                                <li>
-                                    To ensure the availability and accessibility of minimum mental healthcare for all in the foreseeable
-                                    future, particularly to the most vulnerable and underprivileged sections of the population;
-                                </li>
-                                <li>
-                                    To encourage the application of mental health knowledge in general healthcare and in social development;
-                                    and
-                                </li>
-                                <li>
-                                    To promote community participation in the mental health service development and to stimulate efforts
-                                    towards self-help in the community.
-                                </li>
-                            </ul>
-                        </div>
-                        <h3><a href="https://sangath.in/">Sangath</a></h3>
-                        <div className="para">
-                            <p>
-                                Sangath is a not-for-profit organisation working in Goa, India for 24 years to make mental health services
-                                accessible and affordable <br /><b>Helpline: 011-41198666</b>
-                            </p>
-                        </div>
-                        <h3><a href=" https://connectingngo.org">Connecting Trust</a></h3>
-                        <div className="para">
-                            <p>
-                                Connecting NGO is a non-judgemental, non-advisory, confidential and anonymous space for those feeling low,
-                                distressed and/or suicidal <br />
-                                <b>Helpline: +91-9922001122, +91-9922004305 </b>
-                            </p>
+
+                        <div className="para" style={{ marginLeft:"-50px"}}>
+                            
+                                {data?.map(item => (
+                                    <>
+                                    <ul>
+                                        <h3 style={{color: "pink", textShadow: "1px 1px 2px black" }}>
+                                            {item.name}
+                                        </h3>
+                                        <li>{item.Description}</li>
+                                        <li  style={{textAlign:"center"}}><a href="tel:">{item.phone}</a></li>
+                                        </ul>
+                                    </>
+                                ))}
                         </div>
 
                         <div className="gethelp-btn">
-                            <button className="anxiety" onclick="/faq"><strong><i>FAQ</i></strong></button>
+                            <button className="back-btn" onclick="/faq"><strong><i>FAQ</i></strong></button>
                         </div>
                     </div>
                 </div>
