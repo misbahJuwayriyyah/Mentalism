@@ -32,7 +32,7 @@ const GamePage = () => {
                 <div id="loader"></div>
                 <header>
                     <img src="/Images/Logo1.jpeg" alt="Mentalism" style={{ height: "120px", width: "120px", marginLeft: "5rem", marginTop: "6px" }} />
-                    <nav className="nav1 navbar" style={{ width: "800px", height: "60px", fontFamily: "Roboto", fontSize: "24px", fontWeight: "400", lineHeight: "36px" }}>
+                    <nav className="nav1 navbar" style={{ width: "800px", height: "60px", fontFamily: "Roboto", fontSize: "24px", fontWeight: "400", lineHeight: "36px",marginRight:"20px" }}>
                         <div className="content" style={{ paddingTop: "4px" }}>
                             <ul className="menu-list">
                                 <div className="icon cancel-btn">

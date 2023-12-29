@@ -30,7 +30,7 @@ const HelpPage = () => {
 
     return (<>
         <body style={{backgroundRepeat:"repeat"}}>
-            <div className="container">
+            <div className="container" style={{height:"2500px"}}>
                 <div className="header">
                     <h1>FAQ</h1>
                     <p>Frequently Asked Questions About Mental Health</p>

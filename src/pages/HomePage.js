@@ -32,7 +32,7 @@ const HomePage = () => {
             <div id="loader"></div>
             <header>
                 <img src="/Images/Logo1.jpeg" alt="Mentalism" style={{ height: "120px", width: "120px", marginLeft: "5rem", marginTop: "6px" }} />
-                <nav className="navbar" style={{ width: "750px", height: "60px" }}>
+                <nav className="navbar" style={{ width: "800px", height: "60px" }}>
                     <div align="center" className="content" style={{ paddingTop: "4px" }}>
                         <ul className="menu-list">
                             <div className="icon cancel-btn">
