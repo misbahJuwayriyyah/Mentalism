@@ -101,7 +101,7 @@ const HelpPage = () => {
                                             {item.name}
                                         </h3>
                                         <li>{item.Description}</li>
-                                        <li  style={{textAlign:"center"}}><a href="tel:">{item.phone}</a></li>
+                                        <li  style={{textAlign:"center"}}><a href={`tel:${item.phone}`}>{item.phone}</a></li>
                                         </ul>
                                     </>
                                 ))}
