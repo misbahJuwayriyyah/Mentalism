@@ -5,7 +5,10 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+    origin: '*' // or specific origin(s)
+  }));
+  
 
 mongoose.connect('mongodb+srv://MisbahJuwayriyyah:89548c58@projects.sz8og4s.mongodb.net/Projects?retryWrites=true&w=majority')
 .then((response) =>{
@@ -21,8 +24,6 @@ const ProjectList = mongoose.model('ProjectList', new mongoose.Schema({
 app.get('/api/projects/', async (req, res) => {
   try {
     const projects = await ProjectList.find();
-    console.log("HelloWorld")
-    console.log(projects);
     res.json(projects);
   } catch (error) {
     console.error('Error fetching data:', error);
