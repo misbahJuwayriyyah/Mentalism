@@ -718,7 +718,8 @@ html {
   display: none;
 }
 .icon {
-  color: rgb(15, 15, 15);
+  color: #F4ADCB;
+  border:1px solid black;
   font-size: 20px;
   cursor: pointer;
   display: none;
@@ -748,14 +749,14 @@ html {
 }
 
 
-@media (max-width: 1115px) {
+@media (max-width: 1200px) {
   .navbar {
-    background-color: white;
     border-radius: 0;
     box-shadow: none;
-    margin-top: 0;
-    margin-right: 0;
-    z-index: 10000000000000;
+    margin-top: 1.3%;
+    margin-left: 72.7%;
+    z-index: 1000000000000;
+    background-color: transparent !important;
   }
   body.disabledScroll {
     overflow: hidden;
@@ -767,7 +768,10 @@ html {
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
+    background-color: #EEEDEB;
     z-index: 9;
+    border:1px solid black;
+    color:#F4ADCB;
   }
   .icon.cancel-btn {
     display: none;
@@ -808,6 +812,10 @@ html {
   }
 }
 @media (max-width: 1323px) and (min-width: 429px) {
+  .navbar{
+    margin-top: 1.7%;
+    margin-left: 56.5%;
+  }
   .main {
     background-size: 100% 100%;
   }
@@ -820,12 +828,18 @@ html {
 /* media queries */
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 660px) {
+  .navbar{
+    margin-left: 50%;
+    margin-top: 2%;
+    background-color: #EEEDEB;
+    color:#F4ADCB;
+  }
   .main {
-    background: url(../../public/Images/Home-Mobile\ view.png) no-repeat;
+    background: url(../../public/Images/back.jpeg) no-repeat;
     background-size: 200% 120vh;
   }
   body {
-    background: url(../../public/Images/Home-Mobile\ view.png) no-repeat;
+    background: url(../../public/Images/back.jpeg) no-repeat;
     background-size: 200% 210vh;
   }
   .wid-main {
