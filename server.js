@@ -5,10 +5,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({
-    origin: 'https://mentalism.vercel.app/gethelp' // or specific origin(s)
-  }));
-  
+app.use(cors());
 
 mongoose.connect('mongodb+srv://MisbahJuwayriyyah:89548c58@projects.sz8og4s.mongodb.net/Projects?retryWrites=true&w=majority')
 .then((response) =>{
@@ -24,6 +21,7 @@ const ProjectList = mongoose.model('ProjectList', new mongoose.Schema({
 app.get('/api/projects/', async (req, res) => {
   try {
     const projects = await ProjectList.find();
+    console.log(projects);
     res.json(projects);
   } catch (error) {
     console.error('Error fetching data:', error);

@@ -108,7 +108,7 @@ const HelpPage = () => {
                         </div>
 
                         <div className="gethelp-btn">
-                            <button className="back-btn" onclick="/faq"><strong><i>FAQ</i></strong></button>
+                            <Link className="back-btn" style={{background: "rgb(244, 173, 203)", border: "2px solid rgb(244, 173, 203)", color: "black"}} to="/faq"><strong><i>FAQ</i></strong></Link>
                         </div>
                     </div>
                 </div>

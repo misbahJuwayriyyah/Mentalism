@@ -12,6 +12,7 @@ import DepressionTest from './pages/tests/DepressionTest';
 import SudokuGame from './pages/games/SudokuGame';
 import FunGame from './pages/games/FunGame';
 import AudioPlayer from './pages/games/AudioPlayer';
+import FAQ from './pages/FAQ';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Route path="/fun" element={<FunGame />} />
       <Route path="/audioPlayer" element={<AudioPlayer />} />
       <Route path="/gethelp" element={<HelpPage />} />
+      <Route path="/faq" element={<FAQ />} />
       </Routes>
     </Router>
   );

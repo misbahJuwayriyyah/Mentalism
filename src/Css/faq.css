@@ -9,16 +9,19 @@
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: 2500px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .header {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   text-align: center;
-  background-color: #49654c;
+  background-color: #A8DDE2;
+  box-shadow: 5px 5px 25px black;
   padding: 2rem;
-  color: #fff;
+  color: black;
 }
 .header p {
   font-size: 18px;
@@ -70,7 +73,7 @@
 }
 .toggle-btn {
   border: none;
-  background-color: #fff;
+  background-color: #A8DDE2;
   cursor: pointer;
 }
 .faq-answer {
@@ -93,15 +96,15 @@
   color: #00750c;
 }
 
-footer {
+/* footer {
   letter-spacing: 1px;
-  background-color: #49654c;
+
   padding: 1rem;
   text-align: center;
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
   font-weight: 300;
-}
+} */
 
 .goback-btn {
   background-color: #49654c;
