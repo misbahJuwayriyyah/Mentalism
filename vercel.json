@@ -1,5 +1,5 @@
 {
-    "version": "18.16.0",
+    "version": "18",
     "builds": [
         {
             "src": "*.js",
