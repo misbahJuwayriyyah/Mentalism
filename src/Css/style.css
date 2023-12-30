@@ -813,6 +813,9 @@ html {
   }
 }
 @media (max-width: 1323px) and (min-width: 661px) {
+  .desc,.para{
+    padding-left: 0  !important;
+  }
   .nav1{
     margin-right: 65px !important;
   }
@@ -840,6 +843,9 @@ html {
 /* media queries */
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 660px) {
+  .desc,.para{
+    padding-left: 0  !important;
+  }
   .nav1{
     margin-right: 65px !important;
   }
